@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
  * if the number is greater than 0: n is positive
  * if the number is 0: n is zero
