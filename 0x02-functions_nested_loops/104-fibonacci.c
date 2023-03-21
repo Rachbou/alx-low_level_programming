@@ -9,8 +9,8 @@
 int main(void)
 {
 	int i;
-	long j, m = 1, n = 2;
-	long j1, j2, m1, m2, n1, n2;
+	unsigned long j, m = 1, n = 2;
+	unsigned long j1, j2, m1, m2, n1, n2;
 	
 	printf("%lu", m);
 	for (i = 0; i < 90; i++)
@@ -33,7 +33,7 @@ int main(void)
 			j1 += 1;
 			j2 %= 10000000000;
 		}
-		printf(", %ld%ld", j1, j2);
+		printf(", %lu%lu", j1, j2);
 		m1 = n1;
 		m2 = n2;
 		n1 = j1;
