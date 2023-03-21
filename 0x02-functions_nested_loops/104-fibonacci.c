@@ -11,9 +11,9 @@ int main(void)
 	int i;
 	unsigned long j, m = 1, n = 2;
 	unsigned long j1, j2, m1, m2, n1, n2;
-	
+
 	printf("%lu", m);
-	for (i = 0; i < 90; i++)
+	for (i = 2; i < 90; i++)
 	{
 		printf(", %lu", n);
 		j = m;
