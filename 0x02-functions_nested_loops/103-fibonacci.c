@@ -10,7 +10,7 @@ int main(void)
 {
 	long j, s = 0, m = 1, n = 2;
 
-	While (n <= 4000000)
+	while (n <= 4000000)
 	{
 		if (n % 2 != 0)
 		{
