@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
@@ -8,7 +7,7 @@
   * Return: ...
   */
 
-void naturals_to_1024(void)
+int main(void)
 {
 	int i, s;
 	
@@ -22,4 +21,5 @@ void naturals_to_1024(void)
 	}
 	
 	printf("the sum of all the multiples of 3 or 5 below 1024 (excluded) is: %d.\n", s);
+	return (0);
 }
