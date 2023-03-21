@@ -11,7 +11,7 @@ int main(void)
 	long s = 0;
 	long j, m = 1, n = 2;
 
-	While (n =< 4,000,000)
+	While (n <= 4,000,000)
 	{
 		if (n % 2 != 0)
 		{
