@@ -8,8 +8,7 @@
 
 int main(void)
 {
-	long s = 0;
-	long j, m = 1, n = 2;
+	long j, s = 0, m = 1, n = 2;
 
 	While (n <= 4000000)
 	{
