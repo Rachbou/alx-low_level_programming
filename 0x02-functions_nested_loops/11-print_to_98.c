@@ -1,8 +1,9 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
   * add - Entry point
-  * adds two integers and returns the result.
+  * prints all natural numbers from n to 98.
   * @n: The first number.
   * Return: ...
   */
