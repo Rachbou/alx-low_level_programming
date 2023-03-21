@@ -10,15 +10,12 @@ int main(void)
 {
 	long j, s = 0, m = 1, n = 2;
 
+	s += m;
 	while (n < 4000000)
 	{
 		if (n % 2 != 0)
 		{
 			s += n;
-		}
-		if (m % 2 != 0)
-		{
-			s += m;
 		}
 		j = m;
 		m = n;
