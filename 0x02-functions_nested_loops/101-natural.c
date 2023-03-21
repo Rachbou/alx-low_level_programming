@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
-  * print_times_table - Entry point
-  * Prints the 9 times table, starting with 0.
-  * @n: the number to be checked.
-  * Return: ...
+  * main - Entry point
+  * prints the sum of all the multiples of 3 or 5 below 1024.
+  * Return: 0 (Success)
   */
 
 int main(void)
