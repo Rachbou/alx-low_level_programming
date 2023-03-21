@@ -8,9 +8,8 @@
 
 int main(void)
 {
-	long j, s = 0, m = 1, n = 2;
+	long j, s = 0, m = 0, n = 1;
 
-	s += m;
 	while (n < 4000000)
 	{
 		if (n % 2 != 0)
