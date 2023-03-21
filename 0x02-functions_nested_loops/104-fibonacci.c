@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
   * main - Entry point
@@ -11,18 +11,14 @@ int main(void)
 	int i;
 	long j, m = 0, n = 1;
 
+	printf("%ld", n);
 	for (i = 0; i < 98; i++)
 	{
-		_putchar(n + '0');
-		if (i == 98)
-		{
-			continue;
-		}
-		_putchar(',');
-		_putchar(' ');
 		j = m;
 		m = n;
 		n = m + j;
+		printf(", %ld", n);
 	}
+	printf("\n");
 	return (0);
 }
