@@ -9,15 +9,15 @@
 int main(void)
 {
 	int i;
-	long j, m = 0, n = 1;
+	long j, m = 1, n = 2;
 
-	printf("%ld", n);
+	printf("%ld", m);
 	for (i = 0; i < 98; i++)
 	{
+		printf(", %ld", n);
 		j = m;
 		m = n;
 		n = m + j;
-		printf(", %ld", n);
 	}
 	printf("\n");
 	return (0);
