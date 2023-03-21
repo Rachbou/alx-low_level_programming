@@ -16,9 +16,9 @@ void naturals_to_1024(void)
 	{
 		if (i % 3 == 0 || i % 5 == 0)
 		{
-			s += i
+			s += i;
 		}
 	}
 	
-	printf("the sum of all the multiples of 3 or 5 below 1024 (excluded) is: %d.\n", s)
+	printf("the sum of all the multiples of 3 or 5 below 1024 (excluded) is: %d.\n", s);
 }
