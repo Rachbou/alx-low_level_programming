@@ -28,7 +28,7 @@ int main(void)
 	{
 		j1 = m1 + n1;
 		j2 = m2 + n2;
-		if (fib1_half2 + fib2_half2 > 9999999999)
+		if (m2 + n2 > 9999999999)
 		{
 			j1 += 1;
 			j2 %= 10000000000;
