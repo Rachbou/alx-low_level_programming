@@ -10,14 +10,34 @@ int main(void)
 {
 	int i;
 	long j, m = 1, n = 2;
-
-	printf("%ld", m);
-	for (i = 0; i < 98; i++)
+	long j1, j2, m1, m2, n1, n2;
+	
+	printf("%lu", m);
+	for (i = 0; i < 90; i++)
 	{
-		printf(", %ld", n);
+		printf(", %lu", n);
 		j = m;
 		m = n;
 		n = m + j;
+	}
+	m1 = m / 10000000000;
+	n1 = n / 10000000000;
+	m2 = m % 10000000000;
+	n2 = n % 10000000000;
+	for (i = 90; i < 98; i++)
+	{
+		j1 = m1 + n1;
+		j2 = m2 + n2;
+		if (fib1_half2 + fib2_half2 > 9999999999)
+		{
+			j1 += 1;
+			j2 %= 10000000000;
+		}
+		printf(", %ld%ld", j1, j2);
+		m1 = n1;
+		m2 = n2;
+		n1 = j1;
+		n2 = j2;
 	}
 	printf("\n");
 	return (0);
