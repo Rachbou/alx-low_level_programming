@@ -12,13 +12,13 @@ int main(void)
 	unsigned long j, m = 1, n = 2;
 	unsigned long j1, j2, m1, m2, n1, n2;
 
-	printf("%lu", m);
+	printf("%lu, %lu", m, n);
 	for (i = 2; i < 90; i++)
 	{
-		printf(", %lu", n);
 		j = m;
 		m = n;
 		n = m + j;
+		printf(", %lu", n);
 	}
 	m1 = m / 10000000000;
 	n1 = n / 10000000000;
