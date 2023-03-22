@@ -10,19 +10,19 @@
 
 int largest_number(int a, int b, int c)
 {
-    int lar;
+	int lar;
 
-    if (a >= b && a >= c)
-    {
-        lar = a;
-    }
-    else if (b >= a && b >= c)
-    {
-        lar = b;
-    }
-    else
-    {
-        lar = c;
-    }
-    return (lar);
+	if (a >= b && a >= c)
+	{
+		lar = a;
+	}
+	else if (b >= a && b >= c)
+	{
+		lar = b;
+	}
+	else
+	{
+		lar = c;
+	}
+	return (lar);
 }
