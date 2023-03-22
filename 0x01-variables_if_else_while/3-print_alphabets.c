@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- * prints the alphabet in lowercase, and then in uppercase, followed by a new line.
+ * prints the alphabet in lowercase, and in uppercase.
  * Return: Always 0 (Success)
  */
 
