@@ -6,7 +6,6 @@
  * prints Fizz instead of multiples of three.
  * prints Buzz instead of multiples of five.
  * prints FizzBuzz instead of multiples of three and five.
- * @size: the size of the square.
  * Return: Void
  */
 
@@ -34,7 +33,7 @@ int main(void)
 		}
 		if (i == 100)
 		{
-			continue
+			continue;
 		}
 		printf(" ");
 	}
