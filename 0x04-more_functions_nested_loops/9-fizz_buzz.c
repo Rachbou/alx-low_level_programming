@@ -6,7 +6,7 @@
  * prints Fizz instead of multiples of three.
  * prints Buzz instead of multiples of five.
  * prints FizzBuzz instead of multiples of three and five.
- * Return: Void
+ * Return: 0 (Success)
  */
 
 int main(void)
@@ -37,4 +37,5 @@ int main(void)
 		}
 		printf(" ");
 	}
+	return (0);
 }
