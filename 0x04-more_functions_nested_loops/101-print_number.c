@@ -3,17 +3,14 @@
 /**
  * print_number - Entry point
  * prints an integer.
- * @n: the size of the triangle.
+ * @n: the integer to print.
  * Return: Void
  */
 
 void print_number(int n)
 {
-	int m, p, c, num;
+	int m = 1, p = 1, c = 1, num;
 
-	m = 1;
-	p = 1;
-	c = 1;
 	num = n;
 	if (num < 0)
 	{
@@ -25,16 +22,14 @@ void print_number(int n)
 		if ((((num / m) / p) / 10) > 0)
 		{
 			if (m <= 100000000)
-			{
 				m *= 10;
-			}
 			else
-			{
 				p *= 10;
-			}
 		}
 		else
+		{
 			c = 0;
+		}
 	}
 	while (num >= 0)
 	{
@@ -47,13 +42,9 @@ void print_number(int n)
 		{
 			_putchar((((num / m) / p) % 10) + '0');
 			if (p == 1)
-			{
 				m /= 10;
-			}
 			else
-			{
 				p /= 10;
-			}
 		}
 	}
 }
