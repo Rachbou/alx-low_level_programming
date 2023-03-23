@@ -3,25 +3,22 @@
 /**
  * print_number - Entry point
  * prints an integer.
- * @size: the size of the triangle.
+ * @n: the size of the triangle.
  * Return: Void
  */
 
 void print_number(int n)
 {
-	int m; /* power of 10 */
-	int c; /* boolean check */
-	int num; /* convert int to long */
+	int m;
+	int c;
+	int num;
 
 	num = n;
-	/* negatives */
 	if (num < 0)
 	{
 		num *= -1;
 		_putchar('-');
 	}
-
-	/* count up */
 	m = 1;
 	c = 1;
 	while (c)
@@ -31,8 +28,6 @@ void print_number(int n)
 		else
 			c = 0;
 	}
-
-	/* count down */
 	while (num >= 0)
 	{
 		if (m == 1)
