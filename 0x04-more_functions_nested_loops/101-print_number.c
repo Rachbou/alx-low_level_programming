@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_number - Entry point
@@ -9,7 +10,8 @@
 
 void print_number(int n)
 {
-	long m;
+	int m;
+	int p;
 	int c;
 	int num;
 
@@ -23,26 +25,44 @@ void print_number(int n)
 		num = n;
 	}
 	m = 1;
+	p = 1;
 	c = 1;
 	while (c)
 	{
-		if (num / (m * 10) > 0)
-			m *= 10;
+		if (num / (m * p * 10) > 0)
+		{
+			if (m < 1000000000)
+			{
+				m *= 10;
+			}
+			else
+			{
+				p *= 10;
+			}
+		}
 		else
 			c = 0;
 	}
 	c = 1;
 	while (c)
 	{
-		if (m == 1)
+		if (p == 1)
 		{
-			_putchar(num % 10 + '0');
-			c = 0;
+			if (m == 1)
+			{
+				_putchar(num % 10 + '0');
+				c = 0;
+			}
+			else
+			{
+				_putchar(((num / m) % 10) + '0');
+				m /= 10;
+			}
 		}
 		else
 		{
-			_putchar(((num / m) % 10) + '0');
-			m /= 10;
+			_putchar(((num / (m * p)) % 10) + '0');
+				p /= 10;
 		}
 	}
 }
