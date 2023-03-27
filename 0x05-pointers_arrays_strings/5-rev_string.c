@@ -18,7 +18,7 @@ void rev_string(char *s)
 	{
 		l++;
 	}
-	printf("%d\n", l)
+	printf("%d\n", l);
 	for (i = 0; i < l; i++)
 	{
 		rev[i] = s[l - i - 1];
