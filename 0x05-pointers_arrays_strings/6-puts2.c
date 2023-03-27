@@ -7,7 +7,7 @@
  * @s: the string to print.
  * Return: void.
  */
- 
+
 void puts2(char *s)
 {
 	int a;
