@@ -14,7 +14,7 @@ int primeFinder(int m, int n)
 		return (0);
 	else if (m == n)
 		return (1);
-	else if ma > n)
+	else if (m > n)
 		primeFinder(m, n + 1);
 	return (1);
 }
