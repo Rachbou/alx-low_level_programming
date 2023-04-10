@@ -10,6 +10,14 @@
 
 int main(int argc, char *argv[])
 {
-	printf("%d\n", argc - 2);
+	int i;
+	(void)argv;
+
+	for (i = 0; i <= argc; i++)
+	{
+		continue;
+	}
+	printf("%d\n", i - 2);
+
 	return (0);
 }
