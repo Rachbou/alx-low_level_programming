@@ -52,17 +52,13 @@ char **strtow(char *str)
 	int total_words = 0, a = 0, b = 0, l = 0;
 	char **words, *found_word;
 
-	if (str == 0 || *str == 0)
-		return (NULL);
 	total_words = Nwords(str);
 	words = malloc((total_words + 1) * sizeof(char *));
-	if (total_words == 0 || words == NULL)
+	if (str == 0 || *str == 0 || total_words == 0 || words == NULL)
 		return (NULL);
 	for (; *str != '\0' &&  a < total_words;)
 	{
-		if (*str == ' ')
-			str++;
-		else
+		if (*str != ' ')
 		{
 			found_word = str;
 			for (; *str != ' ' && *str != '\0';)
@@ -86,8 +82,8 @@ char **strtow(char *str)
 			a++;
 			b = 0;
 			l = 0;
-			str++;
 		}
+		str++;
 	}
 	return (words);
 }
