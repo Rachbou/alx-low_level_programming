@@ -36,12 +36,10 @@ int Nwords(char *str)
 
 char **strtow(char *str)
 {
-	int total_words = 0, a = 0, b = 0, l = 0, i;
+	int total_words = 0, a = 0, b = 0, l = 0;
 	char **words, *found_word;
 
-	if (*str == "")
-		return (NULL);
-	if (str == NULL)
+	if (str == 0 || *str == 0)
 		return (NULL);
 	total_words = Nwords(str);
 	if (total_words == 0)
