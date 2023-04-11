@@ -73,7 +73,7 @@ char **strtow(char *str)
 			words[a] = malloc((l + 1) * sizeof(char));
 			if (words[a] == 0)
 			{
-				free_everything(words, a)
+				free_everything(words, a);
 				return (NULL);
 			}
 			while (*found_word != ' ' && *found_word != '\0')
