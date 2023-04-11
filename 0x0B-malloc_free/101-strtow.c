@@ -39,7 +39,7 @@ char **strtow(char *str)
 	int total_words = 0, a = 0, b = 0, l = 0, i;
 	char **words, *found_word;
 
-	if (str == "")
+	if (*str == "")
 		return (NULL);
 	if (str == NULL)
 		return (NULL);
