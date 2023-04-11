@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * arrgstostr - Entry point
+ * argstostr - Entry point
  * Concatenates all the arrguments of your program
  * @ac: counter of arrguments
  * @av: vector of arrguments
