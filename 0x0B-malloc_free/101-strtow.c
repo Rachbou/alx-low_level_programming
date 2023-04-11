@@ -27,6 +27,19 @@ int Nwords(char *str)
 }
 
 /**
+ * free_everything - frees the memory
+ * @s: pointer values being passed for freeing
+ * @i: counter
+ * Return: Void
+ */
+void free_everything(char **s, int i)
+{
+	for (; i > 0;)
+		free(s[--i]);
+	free(s);
+}
+
+/**
  * strtow - Entry point
  * Splits a string into words.
  * @str: the string
@@ -42,10 +55,8 @@ char **strtow(char *str)
 	if (str == 0 || *str == 0)
 		return (NULL);
 	total_words = Nwords(str);
-	if (total_words == 0)
-		return (NULL);
 	words = malloc((total_words + 1) * sizeof(char *));
-	if (words == NULL)
+	if (total_words == 0 || words == NULL)
 		return (NULL);
 	for (; *str != '\0' &&  a < total_words;)
 	{
@@ -62,9 +73,7 @@ char **strtow(char *str)
 			words[a] = malloc((l + 1) * sizeof(char));
 			if (words[a] == 0)
 			{
-				for (; a > 0;)
-					free(words[--a]);
-				free(words);
+				free_everything(words, a)
 				return (NULL);
 			}
 			while (*found_word != ' ' && *found_word != '\0')
@@ -74,7 +83,10 @@ char **strtow(char *str)
 				b++;
 			}
 			words[a][b] = '\0';
-			a++; b = 0; l = 0; str++;
+			a++;
+			b = 0;
+			l = 0;
+			str++;
 		}
 	}
 	return (words);
