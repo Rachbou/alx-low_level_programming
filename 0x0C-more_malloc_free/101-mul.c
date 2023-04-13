@@ -51,20 +51,23 @@ int StrLength(char *s)
 int main(int argc, char *argv[])
 {
 	char *s1, *s2;
-	int len1, len2, i, m, d1, d2, *result;
+	int len, len1, len2, i, m, d1, d2, *result;
 
 	s1 = argv[1], s2 = argv[2];
 	if (argc != 3 || IsNotDigit(s1) || IsNotDigit(s2))
+	{
 		printf("Error\n");
 		exit(98);
+	}
 	len1 = StrLength(s1);
 	len2 = StrLength(s2);
-	result = malloc((len1 + len2 + 1) * sizeof(int));
+	len = len1 + len2 + 1;
+	result = malloc(len * sizeof(int));
 	if (!result)
 		return (1);
 	for (i = 0; i <= len1 + len2; i++)
 		result[i] = 0;
-	for (len1 = len1 - 1; len1 >= 0; len1--)
+	for (len1 = StrLength(s1) - 1; len1 >= 0; len1--)
 	{
 		d1 = s1[len1] - '0';
 		m = 0;
