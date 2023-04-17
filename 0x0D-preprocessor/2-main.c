@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - Entry point
@@ -8,12 +8,6 @@
 
 int main(void)
 {
-	int i;
-
-	for (i = 0; __BASE_FILE__[i] != '\0'; i++)
-	{
-		_putchar(__BASE_FILE__[i]);
-	}
-	_putchar('\n');	
+	printf("%s\n", __BASE_FILE__);
 	return (0);
 }
