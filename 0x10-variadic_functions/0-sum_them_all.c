@@ -2,7 +2,7 @@
 
 /**
  * sum_them_all - Entry point
- * returns the sum of all parameters
+ * sums all the parameters
  * @n: the numbers of arguments being passed through
  * Return: the sum of all parameters
  */
