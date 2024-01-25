@@ -19,6 +19,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	{
 		return (NULL);
 	}
+	new->n = n;
 	if (*head == NULL)
 	{
 		new->prev = NULL;
@@ -31,7 +32,6 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	{
 		last = last->next;
 	}
-	new->n = n;
 	new->next = NULL;
 	new->prev = last;
 	last->next = new;
