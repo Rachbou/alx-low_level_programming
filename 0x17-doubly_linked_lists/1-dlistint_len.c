@@ -1,3 +1,6 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -9,13 +12,11 @@
 size_t dlistint_len(const dlistint_t *h)
 {
 	size_t nodes_number = 0;
-	dlistint_t *new;
 
-	new = h;
-	while (new)
+	while (h)
 	{
 		nodes_number++;
-		new = new->next;
+		h = h->next;
 	}
 	return (nodes_number);
 }
